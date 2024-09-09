@@ -1,0 +1,19 @@
+DELIMITER //
+
+CREATE FUNCTION NuevoGasto (
+    P_idpresupuesto INT,
+    P_monto INT,
+    P_tipodemonto VARCHAR (20)
+) 
+RETURNS VARCHAR(10)
+NOT DETERMINISTIC
+BEGIN 
+    -- Insertamos el nuevo gasto en la tabla 'gastos'
+    INSERT INTO gastos (idpresupuesto, FechaDeRegistro, Monto, TipoDeMonto)
+    VALUES (P_idpresupuesto, CURRENT_DATE(), P_monto, P_tipodemonto);
+
+    -- Devolvemos el mensaje de éxito
+    RETURN 'Exitoso';
+END //
+
+DELIMITER ;
