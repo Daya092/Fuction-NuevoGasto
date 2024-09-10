@@ -4,9 +4,9 @@ Creamos una funcion llamada NuevoGasto con tres parametros de entrada
 
 ![image](https://github.com/user-attachments/assets/957f09e8-ebc3-477e-9137-c6895d750498)
 
-Aqui especificamos que la funcion nos devolvera un valos de tipo VARCHAR(20) 
-Como vamos a hacer uso de la funcion CURRENT_DATE() debemos indicar que esta NOT DETERMINISTIC
-ya que los argumentos que nos va a devolver pueden cambiar en cada ejecucion.
+Aquí especificamos que la función nos devolverá un valor de tipo VARCHAR(20) 
+Como vamos a hacer uso de la función CURRENT_DATE() debemos indicar que esta es NOT DETERMINISTIC
+ya que, los argumentos que nos va a devolver pueden cambiar en cada ejecución.
 
 ![image](https://github.com/user-attachments/assets/f0aa86ba-9152-4269-9b42-8f5a2b4ddf26)
 
